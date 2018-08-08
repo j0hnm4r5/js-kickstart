@@ -1,0 +1,70 @@
+{
+    "name": "js-kickstart",
+    "author": "John Mars <jmars@deeplocal.com>",
+    "version": "0.0.0",
+    "license": "UNLICENSED",
+    "scripts": {
+        "kickstart": "node kickstart.js"
+    },
+    "dependencies": {
+        "inquirer": "^6.1.0",
+        "ncp": "^2.0.0",
+        "rimraf": "^2.6.2",
+        "spawn-npm-install": "^1.2.0"
+    },
+    "kickstart": {
+        "dependencies": [
+            "inquirer",
+            "rimraf",
+            "ncp",
+            "spawn-npm-install"
+        ],
+        "devDependencies": []
+    },
+    "shared": {
+        "dependencies": [
+            "concurrently",
+            "dotenv",
+            "esm",
+            "hagen",
+            "nodemon",
+            "normalize.css",
+            "ws"
+        ],
+        "devDependencies": [
+            "babel-eslint",
+            "babel-preset-env",
+            "eslint",
+            "eslint-config-prettier",
+            "eslint-formatter-pretty",
+            "eslint-plugin-import",
+            "eslint-plugin-prettier",
+            "eslint-plugin-promise",
+            "eslint-plugin-unicorn",
+            "node-sass",
+            "parcel-bundler",
+            "prettier",
+            "pug"
+        ]
+    },
+    "standard": {
+        "dependencies": [],
+        "devDependencies": [
+            "eslint-config-airbnb-base"
+        ]
+    },
+    "react": {
+        "dependencies": [
+            "react",
+            "react-dom",
+            "emotion",
+            "react-emotion"
+        ],
+        "devDependencies": [
+            "eslint-config-airbnb",
+            "eslint-plugin-jsx-a11y",
+            "eslint-plugin-react",
+            "babel-preset-react"
+        ]
+    }
+}
