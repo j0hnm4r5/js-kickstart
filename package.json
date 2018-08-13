@@ -64,7 +64,8 @@
             "eslint-config-airbnb",
             "eslint-plugin-jsx-a11y",
             "eslint-plugin-react",
-            "babel-preset-react"
+            "babel-preset-react",
+            "babel-plugin-transform-class-properties"
         ]
     }
 }

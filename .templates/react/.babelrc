@@ -1,4 +1,7 @@
 {
     "presets": ["env", "react"],
-    "plugins": [["emotion", { "autoLabel": true }]]
+    "plugins": [
+        "transform-class-properties",
+        ["emotion", { "autoLabel": true }]
+    ]
 }
