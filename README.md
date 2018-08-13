@@ -30,8 +30,8 @@ To start the development server, run:
 
 ## Authors
 
--   John Mars <jmars@deeplocal.com>
+-   John Mars <john@john-mars.com>
 
 ## Links
 
--   [Repository](https://bitbucket.org/deeplocal/js-kickstart)
+-   [Repository](https://github.com/j0hnm4r5/js-kickstart)
