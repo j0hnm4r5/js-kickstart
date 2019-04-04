@@ -3,6 +3,7 @@ const fs = require(`fs`);
 const rimraf = require(`rimraf`);
 const { ncp } = require(`ncp`);
 const { install, uninstall } = require(`spawn-npm-install`);
+const chalk = require("chalk");
 
 const {
     kickstart,
@@ -119,12 +120,14 @@ function installDeps(deps) {
             deps.dependencies,
             {
                 stdio: `inherit`,
+                silent: true,
             },
             () =>
                 install(
                     deps.devDependencies,
                     {
                         stdio: `inherit`,
+                        silent: true,
                         saveDev: true,
                     },
                     () => resolve()
@@ -140,12 +143,14 @@ function uninstallDeps(deps) {
             deps.dependencies,
             {
                 stdio: `inherit`,
+                silent: true,
             },
             () =>
                 uninstall(
                     deps.devDependencies,
                     {
                         stdio: `inherit`,
+                        silent: true,
                         saveDev: true,
                     },
                     () => resolve()
