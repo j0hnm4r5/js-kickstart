@@ -1,25 +1,49 @@
 {
-    "env": {
-        "node": true
-    },
-    "extends": [
-        "airbnb",
-        "plugin:promise/recommended",
-        "plugin:unicorn/recommended",
-        "plugin:prettier/recommended"
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "airbnb-base",
+    "plugin:unicorn/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": [
+    "unicorn"
+  ],
+  "rules": {
+    "class-methods-use-this": "off",
+    "consistent-return": "off",
+    "import/first": "off",
+    "import/newline-after-import": "off",
+    "import/no-dynamic-require": "off",
+    "import/order": "off",
+    "no-bitwise": "off",
+    "no-console": "off",
+    "no-plusplus": "off",
+    "no-restricted-globals": "off",
+    "no-shadow": [
+      "error",
+      {
+        "allow": [
+          "resolve",
+          "reject",
+          "err",
+          "error",
+          "cb"
+        ]
+      }
     ],
-    "plugins": ["import", "promise", "unicorn"],
-    "rules": {
-        "prettier/prettier": "error",
-        "quotes": ["error", "backtick"],
-        "no-console": "off",
-        "no-plusplus": "off",
-        "prefer-const": "error",
-        "prefer-template": "error",
-        "import/first": "off",
-        "unicorn/filename-case": "off",
-        "radix": "off",
-        "import/prefer-default-export": "off",
-        "no-use-before-define": "off"
-    }
+    "no-underscore-dangle": "off",
+    "no-use-before-define": "off",
+    "prefer-const": "error",
+    "prefer-template": "error",
+    "quotes": [
+      "error",
+      "backtick"
+    ],
+    "radix": "off",
+    "unicorn/filename-case": "off",
+    "unicorn/number-literal-case": "off"
+  }
 }
