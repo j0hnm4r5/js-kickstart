@@ -31,10 +31,7 @@ const envs = (() => {
 
 // ========= EXTENDS =========
 const extenders = (() => {
-	const base = [
-		`plugin:unicorn/recommended`,
-		`plugin:prettier/recommended`,
-	];
+	const base = [`plugin:unicorn/recommended`, `plugin:prettier/recommended`];
 
 	// react js
 	const react = [`airbnb`, ...base, `prettier/react`];
@@ -42,7 +39,22 @@ const extenders = (() => {
 	// vanilla js
 	const vanilla = [`airbnb-base`, ...base];
 
-	return { react, vanilla };
+	// typescript + react
+	const typescriptReact = [
+		`eslint-config-airbnb-typescript`,
+		...base,
+		`prettier/@typescript-eslint`,
+		`prettier/react`,
+	];
+
+	// typescript
+	const typescript = [
+		`eslint-config-airbnb-typescript`,
+		...base,
+		`prettier/@typescript-eslint`,
+	];
+
+	return { react, vanilla, typescriptReact, typescript };
 })();
 
 // ========= PLUGINS =========
